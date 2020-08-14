@@ -1,0 +1,19 @@
+/* Criando variáveis em css usando a pseudo classe root */
+/* É necessário usar :root{} e iniciar a variável usando dois traços "--" */
+
+:root{
+    --bg-button:#f0f0f0;
+    --border-button: solid 1px #888888;
+}
+
+/* Para usar as duas variáveis acima utiliza-se a função var */
+
+.button{
+    font-size: 1.4em;
+    /* Usando var */
+    background-color: var(--bg-button);
+    border: none;
+    border-right: var(--border-button);
+    border-bottom: var(--border-button);
+    outline: none;
+}
