@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import Pai from './componentes/Pai'
+import Filho from './componentes/Filho'
+
 // import Primeiro from './componentes/Primeiro'
 // import BomDia from './componentes/BomDia'
 
@@ -23,10 +26,21 @@ import ReactDOM from 'react-dom'
 
 // Importando Saudacao
 
-import Saudacao from './componentes/Saudacao'
+// import Saudacao from './componentes/Saudacao'
+
+// ReactDOM.render(
+//     <div>
+//         <Saudacao tipo="Bom dia" nome="João"/>       
+//     </div>    
+// , document.getElementById('root'))
+
+
 
 ReactDOM.render(
     <div>
-        <Saudacao tipo="Bom dia" nome="João"/>       
-    </div>    
+    <Pai nome="Ovidio" sobrenome="Matiazi">
+        <Filho nome="João" />
+        <Filho nome="Luiza" />        
+    </Pai>
+</div>      
 , document.getElementById('root'))
