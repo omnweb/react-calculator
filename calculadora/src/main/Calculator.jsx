@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './Calculator.css'
-import Button from '../components/button'
+import Button from '../components/Button'
+import Display from '../components/Display'
 
 
 // Criando a classe Calculator
@@ -12,6 +13,7 @@ export default class Calculator extends Component {
             // Retornando uma expressão
             <div className="calculator">
                 {/* Dentro de jsx a class se torna className, pois class é reservada pela linguagem*/}
+                <Display value="100"/>
                 <Button label="AC"/>                
                 <Button label="/"/>                
                 <Button label="7"/>                
