@@ -17,3 +17,27 @@
     border-bottom: var(--border-button);
     outline: none;
 }
+
+/* Quando o botão está ativo */
+
+.button:active {
+    background-color: #ccc;
+}
+/* Quando o botão ocupa duas posições */
+.button.double {
+    grid-column: span 2;
+}
+
+/* Quando o botão ocupa tres posições */
+.button.triple {
+    grid-column: span 3;
+}
+
+/* Quando o botão tem funções de operações matemáticas */
+.button.operation {
+    background-color: #fa8231;
+    color: white;
+}
+.button.operation:active {
+    background-color: #fa8231CC;   
+}
