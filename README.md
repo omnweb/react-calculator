@@ -1,4 +1,4 @@
-# Projeto CRUD
+# Projeto Calculator
 
 
 Este projeto foi desenvlvido utilizando React e Node.js nas versões mais recentes.
